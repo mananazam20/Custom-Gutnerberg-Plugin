@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "sam/newsletter",
+  "title": "SAM Newsletter",
+  "category": "widgets",
+  "icon": "email",
+  "description": "Newsletter subscription form.",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
+}
