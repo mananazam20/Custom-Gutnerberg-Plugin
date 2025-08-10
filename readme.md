@@ -19,4 +19,4 @@ A WordPress plugin that provides a custom **Gutenberg block** for collecting and
 
 1. **Download or Clone**
    ```bash
-   git clone https://github.com/yourusername/sam-newsletter.git
+   git clone https://github.com/mananazam20/Custom-Gutnerberg-Plugin
