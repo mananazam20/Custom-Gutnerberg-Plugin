@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const name = form.querySelector('[name="name"]').value.trim();
       const email = form.querySelector('[name="email"]').value.trim();
-
       const messageBox = form.querySelector('#message');
 
       try {
-        const response = await fetch('/wp-json/sam/v1/subscribe', {
+        const response = await fetch(samData.restUrl, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'X-WP-Nonce': samData.nonce 
           },
           body: JSON.stringify({ name, email })
         });

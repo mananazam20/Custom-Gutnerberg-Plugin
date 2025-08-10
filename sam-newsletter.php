@@ -34,5 +34,11 @@ function sam_enqueue_frontend_assets() {
             true
         );
     }
+
+
+    wp_localize_script('sam-newsletter-frontend', 'samData', [
+        'restUrl' => esc_url_raw(rest_url('sam/v1/subscribe')),
+        'nonce'   => wp_create_nonce('wp_rest'),
+    ]);
 }
 add_action('wp_enqueue_scripts', 'sam_enqueue_frontend_assets');
